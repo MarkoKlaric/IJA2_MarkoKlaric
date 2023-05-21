@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Korpa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Korpa</h1>
+  <div class="navbar">
+    <a href="index.html">Početna</a>
+    <a class="active" href="contact.html">Kontakt</a>
+    <a href="cart.html">Korpa</a>
+  </div>
+  <ul id="cartList" class="cart-list"></ul>
+
+  <table id="gameTable" class="game-table">
+    <thead>
+      <tr>
+        <th>Naziv igre</th>
+        <th>Slika</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mortal Kombat</td>
+        <td><img src="mortal_kombat.jpg" alt="Mortal Kombat" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <td>League of Legends</td>
+        <td><img src="league_of_legends.jpg" alt="League of Legends" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <td>Dota 2</td>
+        <td><img src="dota_2.jpg" alt="Dota 2" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <td>CS:GO</td>
+        <td><img src="cs_go.jpg" alt="CS:GO" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <td>World of Warcraft</td>
+        <td><img src="world_of_warcraft.jpg" alt="World of Warcraft" width="100" height="100"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="container">
+    <h2>Dodaj proizvod u korpu</h2>
+    <input type="text" id="itemName" placeholder="Naziv proizvoda">
+    <button id="addToCartBtn">Dodaj u korpu</button>
+    <button id="payBtn">Plati</button>
+    <p id="successMessage" class="success-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
